@@ -1,32 +1,54 @@
 #include <iostream>
+#include <iomanip>
+#include <cmath>
+
 using namespace std;
 
 const int N = 50;
-struct Duomenys {    
-    double vardas;
-    double pav;
-    int rez;
-    };
-Duomenys duom [N];
+struct Duomenys {
+  string vardas;
+  string pav;
+  int nd;
+  int egz;
+  double gal;
+  double vid;
+};
+Duomenys duom[N];
 
-int main () 
-{
-int n,
-    nd;
-read();
+void read (int &n, Duomenys duom[]);
+void print (int &n, Duomenys duom[]) ;
 
+int main() {
+  int n=0;
+
+  read(n, duom);
+  print(n, duom);
 }
 
-void read ()
+void read(int &n, Duomenys duom[]) {
+  n=0;
+  for (int i = 0; i < N; i++) {
+    cout << "Iveskite varda " << endl;
+    cin >> duom[i].vardas;
+    cout << "Iveskite pavarde " << endl;
+    cin >> duom[i].pav;
+    cout << "Iveskite atliktu namu darbu kieki " << endl;
+    cin >> n;
+
+    cout << "Iveskite nd rezultatus " << endl;
+    for (int j = 0; j < n; j++) {
+      cin >> duom[i].nd;
+      duom[i].vid = duom[i].vid + duom[i].nd;
+    }
+    cout << "Iveskite egzamino rezultata "<<endl;
+            cin >> duom[i].egz;
+  }
+}
+
+void print(int &n, Duomenys duom[]) 
 {
-  cout<<"Iveskite varda "<<endl;
-  cin>>duom.vardas;
-  cout<<"Iveskite pavarde "<<endl;
-  cin>>duom.pav;
-  cout<<"Iveskite atliktu namu darbu kieki "<<endl;
-  cin>>n;
-  
-  cout<<"Iveskite nd rezultatus "<<endl
-  for (int i=0; i<n; i++) 
-    { cin>>nd;
+  for (int i = 0; i < N; i++) {
+    duom[i].gal >> (0.4 * (duom[i].vid/n) + 0.6 * duom[i].egz);
+    cout << duom[i].vardas << duom[i].pav << duom[i].gal << endl;
+  }
 }
