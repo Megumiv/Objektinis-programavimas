@@ -5,6 +5,9 @@
 #include <iomanip>
 #include <numeric>
 #include <algorithm>
+#include <random>
+#include <cstdlib> 
+#include <ctime>
 
 using std::cout;
 using std::string;
@@ -14,6 +17,12 @@ using std::cin;
 using std::fixed;
 using std::setprecision; 
 using std::left;
+using std::setw; 
+
+std::random_device rd; 
+std::mt19937 gen(rd());
+std::uniform_int_distribution<> dis(0, 10);  // sugeneruoja random skaicius nuo 0 iki 10 - pazymiams
+std::uniform_int_distribution<> diss(1, 10); // - studentu kiekiui
 
 struct stud
 {
@@ -21,8 +30,7 @@ struct stud
 	string pav = "A";
 	vector <int> paz;
 	int egz = 0;
-	double gal;
-
+	double gal = 0.0; 
 };
 
 int m = 0; //studentu kiekis
