@@ -2,7 +2,7 @@
 
 1-oji užduotis
 
-Programa nuskaito vartotojų įvedamus duomenis: 
+Programa nuskaito vartotojų įvedamus duomenis, juos sugeneruoja arba nuskaito iš failo: 
 - studento vardą ir pavardę
 - namų darbų rezultatus ir egzamino rezultatus (10-balėje sistemoje)
 
