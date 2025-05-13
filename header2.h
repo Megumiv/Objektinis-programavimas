@@ -13,6 +13,7 @@
 #include <limits>
 #include <sstream>
 #include <chrono> // testavimui
+#include <fstream> 
 
 
 using std::cout;
@@ -25,7 +26,7 @@ using std::setprecision;
 using std::left;
 using std::setw;
 using std::ifstream;
-using std::accumulate; 
+using std::accumulate; // suma / .size -> vidurkis
 
 std::random_device rd;
 std::mt19937 gen(rd());
@@ -45,8 +46,8 @@ struct stud
 
 int m = 0; //studentu kiekis
 int nd = 0; //namu darbu rezultatai
-int pasirinkimas; // skaiciuoti pagal vidurki ar mediana
-int pazymys; // reikalinga duomenu nuskaityme
+int pasirinkimas=0; // skaiciuoti pagal vidurki ar mediana
+int pazymys=0; // reikalinga duomenu nuskaityme
 
 vector<stud> grupe;
 string choice; 
@@ -124,3 +125,6 @@ void meniu()
 	Vidutinis nuskaitymo vykdymo laikas 100 000 studentu per 6 testus: 7.65952 s
 	Vidutinis nuskaitymo vykdymo laikas 1 000 000 studentu per 6 testus: 40.6522 s
 */
+
+	int isv = 0;
+	using std::ofstream;
