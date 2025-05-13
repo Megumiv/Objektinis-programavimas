@@ -1,5 +1,7 @@
 # Objektinis-programavimas
 
+Reorganizuotas kodas, išskirstytas į kelis failus.
+
 Programa nuskaito vartotojų įvedamus duomenis, juos nuskaito iš failo arba sugeneruoja: studento vardą ir pavardę, namų darbų rezultatus ir egzamino rezultatus.
 
 Yra meniu skirtingos programos eigos pasirinkimui:  <br /> 1 - įrašyti ranka; <br /> 2 - generuoti tik pažymius; <br /> 3 - generuoti studentų vardus, pavardes ir pažymius; <br /> 4 - duomenis nuskaityti iš failo; <br /> 5 - baigti darbą ir išvesti rezultatus su pasirinktinu rūšiavimu. 
