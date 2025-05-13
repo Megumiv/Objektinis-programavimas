@@ -7,7 +7,7 @@ Yra meniu skirtingos programos eigos pasirinkimui:  <br /> 1 - įrašyti ranka; 
 <br />
 Baigus duomenų įvedimą, suskaičiuoja galutinį balą pagal formulę: Galutinis = 0.4 * vidurkis + 0.6 * egzaminas. Arba vietoj vidurkio pasirenkant medianą.
 
-Rezultatai išvedami lentelėje, pasirenkant duomenų eigą.
+Rezultatai išvedami lentelėje, pasirenkant duomenų eigą bei išvestį į ekraną arba failą.
 
 <br />
 Pridėtas 4 meniu punkto (nuskaitymo) testavimas. Jo rezultatai:
