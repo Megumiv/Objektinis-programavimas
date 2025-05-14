@@ -14,6 +14,7 @@
 #include <sstream>
 #include <chrono> // testavimui
 #include <stdexcept> //
+#include <filesystem>
 
 using std::cout;
 using std::string;

@@ -1,6 +1,7 @@
 #pragma once
 #include "Header.h"
 
+// Nuskaitomi failai
 void Nuskaitymas(stud& laik, const string& filename) {
 
 	ifstream file(filename);
@@ -45,7 +46,7 @@ void Nuskaitymas(stud& laik, const string& filename) {
 	file.close();
 }
 
-
+// Duomenu ivedimai ranka
 void ivedimai(stud& laik) {
 
 	cout << "Iveskite studento varda ir pavarde: ";
@@ -68,5 +69,46 @@ void ivedimai(stud& laik) {
 			laik.paz.push_back(nd);
 		else
 			cout << "Netinkamas pazymys. Iveskite skaiciu nuo 0 iki 10.\n";
+	}
+}
+
+
+// Duomenu failu generavimas
+void generateStudentFile(const std::string& filename, size_t recordCount) {
+	std::ofstream out(filename);
+	if (!out.is_open()) {
+		std::cerr << "Nepavyko atidaryti failo: " << filename << "\n";
+		return;
+	}
+
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_int_distribution<> dis(1, 10);
+
+	for (size_t i = 1; i <= recordCount; ++i) {
+		out << "VardasNR" << i << " PavardeNR" << i << " "
+			<< dis(gen) << " " << dis(gen) << " "
+			<< dis(gen) << " " << dis(gen) << " "
+			<< dis(gen) << "\n";
+	}
+
+	out.close();
+	std::cout << "\nFailas sukurtas: " << filename << " (" << recordCount << " studentu)";
+} 
+void GenFailai() {
+	std::vector<std::pair<std::string, size_t>> failai = {
+		{"studentai_1k.txt", 1'000},
+		{"studentai_10k.txt", 10'000},
+		{"studentai_100k.txt", 100'000},
+		{"studentai_1m.txt", 1'000'000},
+		{"studentai_10m.txt", 10'000'000}
+	};
+
+	for (const auto& [filename, count] : failai) {
+		auto start = std::chrono::high_resolution_clock::now();
+		generateStudentFile(filename, count);
+		auto end = std::chrono::high_resolution_clock::now();
+		std::chrono::duration<double> elapsed = end - start;
+		std::cout << "Sugeneruota per: " << elapsed.count() << " s\n\n";
 	}
 }

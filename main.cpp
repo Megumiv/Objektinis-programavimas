@@ -3,6 +3,7 @@
 #include "sort.h"
 #include "Input.h"
 #include "Output.h"
+#include "penkiOut.h"
 
 int main()
 {
@@ -99,7 +100,7 @@ int main()
 			testai.push_back(diff.count());
 			//}
 
-			if (testnr > 1) { cout << "\nVidutinis nuskaitymo vykdymo laikas 1 000 000 studentu per " << testai.size() << " testus: " << tvid(testai) << " s\n"; } // testavimo rezultatas 
+			if (testnr > 1) { cout << "\nVidutinis nuskaitymo vykdymo laikas 1 000 studentu per " << testai.size() << " testus: " << tvid(testai) << " s\n"; } // testavimo rezultatas 
 		}
 
 		else if (choice == "5") { // baigiamas darbas - isvestis ir rusiavimas
@@ -107,7 +108,16 @@ int main()
 			SortMeniu(); // rusiavimo eigos pasirinkimas
 			Sort(sortChoice);  // rusiavimo funkcija
 			Isvedimas(grupe); // Rezultatai
+			cout << "\nSuskirstymui pagal bala i kietiaciu ir vargsiuku failus:";
+			SortMeniu(); // rusiavimo eigos pasirinkimas
+			Sort(sortChoice);  // rusiavimo funkcija
+			Skirstymas(grupe); // Kietiaciu ir vargsiuku failai
+
 			break;
+		}
+
+		else if (choice == "6") { // generuojami duomenu failai
+			GenFailai();
 		}
 
 		else { // meniu neteisingo ivedimo isvestis

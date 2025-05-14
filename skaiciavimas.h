@@ -26,8 +26,9 @@ void meniu()
 	cout << "3 - Generuoti pazymius ir studentu vardus bei pavardes\n";
 	cout << "4 - Duomenis nuskaityti is failo\n";
 	cout << "5 - Baigti darba ir isvesti rezultatus\n";
+	cout << "6 - Sugeneruoti testavimo failus\n";
 
-	cout << "Pasirinkite (1, 2, 3, 4, 5 ): ";
+	cout << "Pasirinkite (1, 2, 3, 4, 5, 6 ): ";
 	cin >> choice;
 }
 
