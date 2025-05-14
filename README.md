@@ -7,11 +7,7 @@ Yra meniu skirtingos programos eigos pasirinkimui:  <br /> 1 - įrašyti ranka; 
 <br />
 Baigus duomenų įvedimą, suskaičiuoja galutinį balą pagal formulę: Galutinis = 0.4 * vidurkis + 0.6 * egzaminas. Arba vietoj vidurkio pasirenkant medianą.
 <br />
-Rezultatai išvedami lentelėje, pasirenkant duomenų eigą bei išvestį į ekraną arba failą. Papildomai išvedami failai: kietiakiai.txt (balas >= 5) ir vargsiukai.txt (balas < 5).
-<br />
-Naujų generuojamų failų testavimo rezultatai: <br />
-![Screenshot 2025-05-14 1619021](https://github.com/user-attachments/assets/047dd98f-6a6c-4c0a-a7f3-96d4204f2966) 
-
+Rezultatai išvedami lentelėje, pasirenkant duomenų eigą bei išvestį į ekraną arba failą. PAPILDOMAI išvedami failai: kietiakiai.txt (balas >= 5) ir vargsiukai.txt (balas < 5).
 
 <br />
 4 meniu punkto (nuskaitymo) testavimas. Jo rezultatai:
@@ -19,3 +15,6 @@ Naujų generuojamų failų testavimo rezultatai: <br />
 	<br /> - Vidutinis nuskaitymo vykdymo laikas 100 000 studentu per 6 testus: 7.65952 s
 	<br /> - Vidutinis nuskaitymo vykdymo laikas 1 000 000 studentu per 6 testus: 40.6522 s
  
+<br />
+NAUJŲ generuojamų failų testavimo rezultatai: <br />
+![Screenshot 2025-05-14 1619021](https://github.com/user-attachments/assets/047dd98f-6a6c-4c0a-a7f3-96d4204f2966) 
