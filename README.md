@@ -11,8 +11,8 @@ Baigus duomenų įvedimą, suskaičiuoja galutinį balą pagal formulę: Galutin
 Rezultatai išvedami lentelėje, pasirenkant duomenų eigą bei išvestį į ekraną arba failą. PAPILDOMAI išvedami failai: kietiakiai.txt (balas >= 5) ir vargsiukai.txt (balas < 5).
 
 
-<br/>
-4 meniu punkto (nuskaitymo) testavimas. Jo rezultatai:
+
+<br/>4 meniu punkto (nuskaitymo) testavimas. Jo rezultatai:
 	<br /> - Vidutinis nuskaitymo vykdymo laikas 10 000 studentu per 6 testus: 0.604896 s
 	<br /> - Vidutinis nuskaitymo vykdymo laikas 100 000 studentu per 6 testus: 7.65952 s
 	<br /> - Vidutinis nuskaitymo vykdymo laikas 1 000 000 studentu per 6 testus: 40.6522 s
