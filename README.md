@@ -1,4 +1,5 @@
-# Objektinis-programavimas
+# Objektinis-programavimas![Screenshot 2025-05-14 1619021](https://github.com/user-attachments/assets/ab844745-c0ab-41c5-9b36-4e0a73bcdcb2)
+
 
 Programa nuskaito vartotojų įvedamus duomenis, juos nuskaito iš failo arba sugeneruoja: studento vardą ir pavardę, namų darbų rezultatus ir egzamino rezultatus.
 
@@ -17,4 +18,5 @@ Rezultatai išvedami lentelėje, pasirenkant duomenų eigą bei išvestį į ekr
  
 <br />
 NAUJŲ generuojamų failų testavimo rezultatai: <br />
-![Screenshot 2025-05-14 1619021](https://github.com/user-attachments/assets/047dd98f-6a6c-4c0a-a7f3-96d4204f2966) 
+
+![Screenshot 2025-05-14 1619021](https://github.com/user-attachments/assets/ba5e4c74-fcc5-4ce3-ac79-41e4699393d1)
