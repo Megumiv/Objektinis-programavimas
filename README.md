@@ -9,7 +9,7 @@ Baigus duomenų įvedimą, suskaičiuoja galutinį balą pagal formulę: Galutin
 <br />
 Rezultatai išvedami lentelėje, pasirenkant duomenų eigą bei išvestį į ekraną arba failą. Papildomai išvedami failai: kietiakiai.txt (balas >= 5) ir vargsiukai.txt (balas < 5).
 <br />
-Naujų generuojamų failų testavimo rezultatai:
+Naujų generuojamų failų testavimo rezultatai: <br />
 ![Screenshot 2025-05-14 1619021](https://github.com/user-attachments/assets/047dd98f-6a6c-4c0a-a7f3-96d4204f2966) 
 
 
