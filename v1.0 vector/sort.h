@@ -18,15 +18,29 @@ void SortMeniu() {
 	}
 }
 
+int extractNumber(const string& pavarde) { // isrenka tik skaitmenis
+	string digits;
+	for (char c : pavarde) {
+		if (isdigit(c)) digits += c;
+	}
+	return digits.empty() ? 0 : std::stoi(digits);
+}
+
 void Sort(const string& sortBy) {
 	if (sortBy == "a") { //pavarde
 		std::sort(grupe.begin(), grupe.end(), [](const stud& a, const stud& b) {
-			return a.pav < b.pav;
+			int numA = extractNumber(a.pav);
+			int numB = extractNumber(b.pav);
+			if (numA == numB)  return a.pav < b.pav; // turi sutapti skaitmenu kiekis
+			return numA < numB;
 			});
 	}
 	else if (sortBy == "b") { //vardas
 		std::sort(grupe.begin(), grupe.end(), [](const stud& a, const stud& b) {
-			return a.var < b.var;
+			int numA = extractNumber(a.var);
+			int numB = extractNumber(b.var);
+			if (numA == numB)  return a.var < b.var; // turi sutapti skaitmenu kiekis
+			return numA < numB;
 			});
 	}
 	else if (sortBy == "c") { // vidurkio galutinis
