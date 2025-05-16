@@ -13,8 +13,8 @@ double tvid(const deque<double>& times) {
 
 /* testavimo rezultatai DEQUE:
 	Vidutinis nuskaitymo vykdymo laikas 10 000 studentu per 5 testus: 4.93762 s
-	Vidutinis nuskaitymo vykdymo laikas 1 000 studentu per 5 testus: 56.9274 s
-	Vidutinis nuskaitymo vykdymo laikas 1 000 studentu per 5 testus: 273.748 s
+	Vidutinis nuskaitymo vykdymo laikas 100 000 studentu per 5 testus: 56.9274 s
+	Vidutinis nuskaitymo vykdymo laikas 1 000 000 studentu per 5 testus: 273.748 s
 */
 
 /* Nauju generuojamu duomenu failu testavimo rezultatai:
