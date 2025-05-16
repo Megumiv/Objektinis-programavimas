@@ -12,10 +12,10 @@ Baigus duomenų įvedimą, suskaičiuoja galutinį balą pagal formulę:  Galuti
 
 <br/> Realizuota su std::vector, std::list arba std::deque.        Sparčiausiai nuskaitė failus su vector, tada su deque ir lėčiausiai su list:
 
-<br/>Nuskaitymo **testavimo** rezultatai (std::vector, std::list, std::deque): <br />
+Nuskaitymo **testavimo** rezultatai (std::vector, std::list, std::deque): <br />
 
 ![Screenshot 2025-05-16 032507](https://github.com/user-attachments/assets/23f8fcc8-0da3-4cfe-9e5f-dd563296abc4)  <br/>
 
 ![Screenshot 2025-05-16 031054](https://github.com/user-attachments/assets/3de172fb-9134-4b43-9779-54a16044ac44)  <br/>
 
-![Screenshot 2025-05-16 024957](https://github.com/user-attachments/assets/105df19c-c133-4435-9ee5-628142cd10c4)  <br/>
+![Screenshot 2025-05-16 030221](https://github.com/user-attachments/assets/a94f0937-2c6a-4908-a499-d9e2184d2fd8)  <br/>
