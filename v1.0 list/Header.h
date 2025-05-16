@@ -19,7 +19,7 @@
 
 using std::cout;
 using std::string;
-using std::vector;
+//using std::vector;
 using std::endl;
 using std::cin;
 using std::fixed;

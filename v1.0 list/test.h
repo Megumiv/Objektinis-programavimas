@@ -11,10 +11,10 @@ double tvid(const list<double>& times) {
 	return accumulate(times.begin(), times.end(), 0.0) / times.size();
 }
 
-/* testavimo rezultatai:
-	Vidutinis nuskaitymo vykdymo laikas 10 000 studentu per 6 testus: 0.604896 s
-	Vidutinis nuskaitymo vykdymo laikas 100 000 studentu per 6 testus: 7.65952 s
-	Vidutinis nuskaitymo vykdymo laikas 1 000 000 studentu per 6 testus: 40.6522 s
+/* testavimo rezultatai VECTOR:
+	Vidutinis nuskaitymo vykdymo laikas 10 000 studentu per 5 testus: 8.64434 s
+	Vidutinis nuskaitymo vykdymo laikas 100 000 studentu per 5 testus: 110.531 s
+	Vidutinis nuskaitymo vykdymo laikas 1 000 000 studentu per 5 testus: 442.675 s
 */
 
 /* Nauju generuojamu duomenu failu testavimo rezultatai:
