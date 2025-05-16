@@ -100,7 +100,7 @@ int main()
 			testai.push_back(diff.count());
 			//}
 
-			if (testnr > 1) { cout << "\nVidutinis nuskaitymo vykdymo laikas 1 000 studentu per " << testai.size() << " testus: " << tvid(testai) << " s\n"; } // testavimo rezultatas 
+			if (testnr > 1) { cout << "\nVidutinis nuskaitymo vykdymo laikas 1 000 studentu per " << testnr << " testus: " << tvid(testai) << " s\n"; } // testavimo rezultatas 
 		}
 
 		else if (choice == "5") { // baigiamas darbas - isvestis ir rusiavimas
